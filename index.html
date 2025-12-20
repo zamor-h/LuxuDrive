@@ -3,16 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DriveLux - Reliable Cars. Flexible Rentals. Anytime.</title>
+    <meta name="description" content="Reliable Cars. Flexible Rentals. Anytime. Experience premium car rentals with transparent pricing, 24/7 support, and complete peace of mind.">
+    <meta name="keywords" content="car rental, luxury cars, flexible rentals, 24/7 support, transparent pricing">
+    <title>LuxuDrive - Reliable Cars. Flexible Rentals. Anytime.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LuxuDrive",
+      "url": "https://luxudrive.com",
+      "logo": "https://luxudrive.com/logo.png",
+      "description": "Reliable Cars. Flexible Rentals. Anytime. Experience premium car rentals with transparent pricing, 24/7 support, and complete peace of mind.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-555-123-4567",
+        "contactType": "customer service",
+        "email": "info@luxudrive.com"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Rental Drive",
+        "addressLocality": "Miami",
+        "addressRegion": "FL",
+        "postalCode": "33101",
+        "addressCountry": "US"
+      }
+    }
+    </script>
 </head>
 <body>
 
     <!-- ===================================
-         HEADER / NAVIGATION
+        HEADER / NAVIGATION
     =================================== -->
     <header class="header" id="header">
         <nav class="nav">
@@ -36,7 +62,7 @@
     </header>
 
     <!-- ===================================
-         HERO SECTION
+        HERO SECTION
     =================================== -->
     <section class="hero">
         <div class="container">
@@ -69,15 +95,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80" alt="Luxury Car" loading="eager">
+                    <!-- ===================================
+                        HERO CAROUSEL
+                    =================================== -->
+                <div class="hero-visual fade-in">
+                    <div class="carousel" id="heroCarousel">
+                        <div class="carousel-inner">
+                        <img
+                            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=800"
+                            alt="Porsche 911"
+                            class="active"
+                        />
+                        <img
+                            src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=800"
+                            alt="BMW 5 Series"
+                        />
+                        <img
+                            src="https://images.unsplash.com/photo-1617469767053-d3b523a0b982?auto=format&fit=crop&q=80&w=800"
+                            alt="Tesla Model 3"
+                        />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ===================================
-         TRUST INDICATORS
+        TRUST INDICATORS
     =================================== -->
     <section class="trust-section fade-in">
         <div class="container">
@@ -107,7 +152,7 @@
     </section>
 
     <!-- ===================================
-         FEATURED CARS
+        FEATURED CARS
     =================================== -->
     <section class="section fade-in">
         <div class="container">
@@ -118,7 +163,7 @@
             <div class="cars-grid">
                 <!-- Economy Car -->
                 <div class="car-card">
-                    <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=500&q=80" alt="Toyota Corolla" class="car-image">
+                    <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=500&q=80" alt="Toyota Corolla" class="car-image" loading="lazy">
                     <div class="car-content">
                         <span class="car-badge">Economy</span>
                         <h3 class="car-name">Toyota Corolla</h3>
@@ -137,7 +182,7 @@
 
                 <!-- SUV -->
                 <div class="car-card">
-                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=500&q=80" alt="Toyota RAV4" class="car-image">
+                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=500&q=80" alt="Toyota RAV4" class="car-image" loading="lazy">
                     <div class="car-content">
                         <span class="car-badge">SUV</span>
                         <h3 class="car-name">Toyota RAV4</h3>
@@ -156,7 +201,7 @@
 
                 <!-- Luxury -->
                 <div class="car-card">
-                    <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=500&q=80" alt="BMW 5 Series" class="car-image">
+                    <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=500&q=80" alt="BMW 5 Series" class="car-image" loading="lazy">
                     <div class="car-content">
                         <span class="car-badge">Luxury</span>
                         <h3 class="car-name">BMW 5 Series</h3>
@@ -177,7 +222,7 @@
     </section>
 
     <!-- ===================================
-         MOST RENTED CARS
+        MOST RENTED CARS
     =================================== -->
     <section class="section fade-in" style="background-color: var(--surface);">
         <div class="container">
@@ -188,9 +233,9 @@
             <div class="cars-grid">
                 <!-- Most Rented: Tesla Model 3 -->
                 <div class="car-card">
-                    <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=500&q=80" alt="Tesla Model 3" class="car-image">
+                    <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=500&q=80" alt="Tesla Model 3" class="car-image" loading="lazy">
                     <div class="car-content">
-                        <span class="car-badge" style="background-color: var(--primary); color: var(--white);">⭐ Most Rented</span>
+                        <span class="car-badge car-badge-primary">⭐ Most Rented</span>
                         <h3 class="car-name">Tesla Model 3</h3>
                         <div class="car-features">
                             <span class="car-feature">⚙️ Automatic</span>
@@ -207,9 +252,9 @@
 
                 <!-- Honda CR-V -->
                 <div class="car-card">
-                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=500&q=80" alt="Honda CR-V" class="car-image">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=500&q=80" alt="Honda CR-V" class="car-image" loading="lazy">
                     <div class="car-content">
-                        <span class="car-badge" style="background-color: var(--primary); color: var(--white);">⭐ Most Rented</span>
+                        <span class="car-badge car-badge-primary">⭐ Most Rented</span>
                         <h3 class="car-name">Honda CR-V</h3>
                         <div class="car-features">
                             <span class="car-feature">⚙️ Automatic</span>
@@ -226,9 +271,9 @@
 
                 <!-- Mercedes-Benz C-Class -->
                 <div class="car-card">
-                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=500&q=80" alt="Mercedes-Benz C-Class" class="car-image">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=500&q=80" alt="Mercedes-Benz C-Class" class="car-image" loading="lazy">
                     <div class="car-content">
-                        <span class="car-badge" style="background-color: var(--primary); color: var(--white);">⭐ Most Rented</span>
+                        <span class="car-badge car-badge-primary">⭐ Most Rented</span>
                         <h3 class="car-name">Mercedes C-Class</h3>
                         <div class="car-features">
                             <span class="car-feature">⚙️ Automatic</span>
@@ -247,7 +292,7 @@
     </section>
 
     <!-- ===================================
-         HOW IT WORKS
+        HOW IT WORKS
     =================================== -->
     <section class="section fade-in">
         <div class="container">
@@ -281,7 +326,7 @@
     </section>
 
     <!-- ===================================
-         BRAND PARTNERS
+        BRAND PARTNERS
     =================================== -->
     <section class="brands-section fade-in">
         <div class="container">
@@ -312,7 +357,7 @@
     </section>
 
     <!-- ===================================
-         TESTIMONIALS
+        TESTIMONIALS
     =================================== -->
     <section class="section fade-in">
         <div class="container">
@@ -330,7 +375,7 @@
                         </div>
                     </div>
                     <p class="testimonial-text">
-                        "The booking process was incredibly smooth, and the car was in pristine condition. DriveLux made my business trip stress-free. Highly recommended!"
+                        "The booking process was incredibly smooth, and the car was in pristine condition. LuxuDrive made my business trip stress-free. Highly recommended!"
                     </p>
                 </div>
 
@@ -343,7 +388,7 @@
                         </div>
                     </div>
                     <p class="testimonial-text">
-                        "Excellent customer service and transparent pricing. No hidden fees, exactly as advertised. I'll definitely be using DriveLux for all future rentals."
+                        "Excellent customer service and transparent pricing. No hidden fees, exactly as advertised. I'll definitely be using LuxuDrive for all future rentals."
                     </p>
                 </div>
 
@@ -364,18 +409,18 @@
     </section>
 
     <!-- ===================================
-         CTA SECTION
+        CTA SECTION
     =================================== -->
     <section class="cta-section fade-in">
         <div class="container">
             <h2 class="cta-title">Ready to Hit the Road?</h2>
-            <p class="cta-subtitle">Book your perfect car today and experience the DriveLux difference</p>
+            <p class="cta-subtitle">Book your perfect car today and experience the LuxuDrive difference</p>
             <a href="/booking" class="btn btn-light">Start Your Rental</a>
         </div>
     </section>
 
     <!-- ===================================
-         FAQ SECTION
+        FAQ SECTION
     =================================== -->
     <section class="section fade-in">
         <div class="container">
@@ -438,14 +483,13 @@
     </section>
 
     <!-- ===================================
-         FOOTER
+        FOOTER
     =================================== -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3 class="logo" style="color: var(--primary); margin-bottom: var(--spacing-md);">
-                        <span>🚗</span> DriveLux
+                    <h3 class="footer-logo">LuxuDrive
                     </h3>
                     <p>Your trusted partner for premium car rentals. We're committed to providing exceptional service, transparent pricing, and a seamless rental experience.</p>
                     <div class="social-links">
@@ -482,7 +526,7 @@
                     <h3>Contact Us</h3>
                     <ul class="footer-links">
                         <li>📞 +1 (555) 123-4567</li>
-                        <li>✉️ info@drivelux.com</li>
+                        <li>✉️ info@luxudrive.com</li>
                         <li>📍 123 Rental Drive, Miami, FL 33101</li>
                         <li style="margin-top: var(--spacing-md);">
                             <strong>Hours:</strong><br>
@@ -494,13 +538,13 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 DriveLux Car Rentals. All rights reserved. | <a href="/privacy" style="color: var(--primary);">Privacy Policy</a> | <a href="/terms" style="color: var(--primary);">Terms of Service</a></p>
+                <p>&copy; 2024 LuxuDrive Car Rentals. All rights reserved. | <a href="/privacy" style="color: var(--primary);">Privacy Policy</a> | <a href="/terms" style="color: var(--primary);">Terms of Service</a></p>
             </div>
         </div>
     </footer>
 
     <!-- ===================================
-         BACK TO TOP BUTTON
+        BACK TO TOP BUTTON
     =================================== -->
     <button class="back-to-top" id="backToTop" aria-label="Back to top">
         ↑
