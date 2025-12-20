@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveLux - Reliable Cars. Flexible Rentals. Anytime.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===================================
+         HEADER / NAVIGATION
+    =================================== -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="/" class="logo">
+                LuxuDrive
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/cars">Cars</a></li>
+                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/booking" class="btn btn-primary btn-small">Book a Car</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ===================================
+         HERO SECTION
+    =================================== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Reliable Cars.<br>
+                        <span>Flexible Rentals.</span><br>
+                        Anytime.
+                    </h1>
+                    <p class="hero-subtitle">
+                        Experience premium car rentals with transparent pricing, 24/7 support, and complete peace of mind. Your journey starts here.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="/booking" class="btn btn-primary">Book Now</a>
+                        <a href="/cars" class="btn btn-secondary">View Cars</a>
+                    </div>
+                    <div class="hero-badges">
+                        <div class="hero-badge">
+                            <span class="hero-badge-icon">✓</span>
+                            Fully Insured
+                        </div>
+                        <div class="hero-badge">
+                            <span class="hero-badge-icon">✓</span>
+                            24/7 Support
+                        </div>
+                        <div class="hero-badge">
+                            <span class="hero-badge-icon">✓</span>
+                            No Hidden Fees
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80" alt="Luxury Car" loading="eager">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+         TRUST INDICATORS
+    =================================== -->
+    <section class="trust-section fade-in">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">🕐</div>
+                    <h3 class="trust-title">24/7 Support</h3>
+                    <p class="trust-desc">Round-the-clock customer service for your peace of mind</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🛡️</div>
+                    <h3 class="trust-title">Fully Insured</h3>
+                    <p class="trust-desc">Comprehensive coverage on every rental vehicle</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">💰</div>
+                    <h3 class="trust-title">No Hidden Fees</h3>
+                    <p class="trust-desc">Transparent pricing with no surprises at checkout</p>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">⭐</div>
+                    <h3 class="trust-title">Trusted by Thousands</h3>
+                    <p class="trust-desc">Over 50,000 satisfied customers worldwide</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+         FEATURED CARS
+    =================================== -->
+    <section class="section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Cars</h2>
+                <p class="section-subtitle">Explore our handpicked selection of premium vehicles for every journey</p>
+            </div>
+            <div class="cars-grid">
+                <!-- Economy Car -->
+                <div class="car-card">
+                    <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=500&q=80" alt="Toyota Corolla" class="car-image">
+                    <div class="car-content">
+                        <span class="car-badge">Economy</span>
+                        <h3 class="car-name">Toyota Corolla</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Petrol</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$42<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=toyota-corolla" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUV -->
+                <div class="car-card">
+                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=500&q=80" alt="Toyota RAV4" class="car-image">
+                    <div class="car-content">
+                        <span class="car-badge">SUV</span>
+                        <h3 class="car-name">Toyota RAV4</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Hybrid</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$75<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=toyota-rav4" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury -->
+                <div class="car-card">
+                    <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=500&q=80" alt="BMW 5 Series" class="car-image">
+                    <div class="car-content">
+                        <span class="car-badge">Luxury</span>
+                        <h3 class="car-name">BMW 5 Series</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Diesel</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$145<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=bmw-5-series" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+         MOST RENTED CARS
+    =================================== -->
+    <section class="section fade-in" style="background-color: var(--surface);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Most Rented Cars</h2>
+                <p class="section-subtitle">Customer favorites that deliver exceptional value and reliability</p>
+            </div>
+            <div class="cars-grid">
+                <!-- Most Rented: Tesla Model 3 -->
+                <div class="car-card">
+                    <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=500&q=80" alt="Tesla Model 3" class="car-image">
+                    <div class="car-content">
+                        <span class="car-badge" style="background-color: var(--primary); color: var(--white);">⭐ Most Rented</span>
+                        <h3 class="car-name">Tesla Model 3</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⚡ Electric</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$125<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=tesla-model-3" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Honda CR-V -->
+                <div class="car-card">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=500&q=80" alt="Honda CR-V" class="car-image">
+                    <div class="car-content">
+                        <span class="car-badge" style="background-color: var(--primary); color: var(--white);">⭐ Most Rented</span>
+                        <h3 class="car-name">Honda CR-V</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Petrol</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$68<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=honda-crv" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mercedes-Benz C-Class -->
+                <div class="car-card">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=500&q=80" alt="Mercedes-Benz C-Class" class="car-image">
+                    <div class="car-content">
+                        <span class="car-badge" style="background-color: var(--primary); color: var(--white);">⭐ Most Rented</span>
+                        <h3 class="car-name">Mercedes C-Class</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Petrol</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$165<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=mercedes-c-class" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+         HOW IT WORKS
+    =================================== -->
+    <section class="section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Rent a car in four simple steps and hit the road in minutes</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Choose a Car</h3>
+                    <p class="step-desc">Browse our diverse fleet and select the perfect vehicle for your needs</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Pick Dates</h3>
+                    <p class="step-desc">Select your pickup and return dates with flexible scheduling options</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Confirm Booking</h3>
+                    <p class="step-desc">Complete your reservation with our secure payment process</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Drive Away</h3>
+                    <p class="step-desc">Pick up your car and enjoy your journey with complete confidence</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+         BRAND PARTNERS
+    =================================== -->
+    <section class="brands-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted Brands</h2>
+                <p class="section-subtitle">Partner with the world's leading automotive manufacturers</p>
+            </div>
+        </div>
+        <div class="brands-carousel">
+            <div class="brand-logo">BMW</div>
+            <div class="brand-logo">Mercedes</div>
+            <div class="brand-logo">Toyota</div>
+            <div class="brand-logo">Honda</div>
+            <div class="brand-logo">Tesla</div>
+            <div class="brand-logo">Audi</div>
+            <div class="brand-logo">Lexus</div>
+            <div class="brand-logo">Porsche</div>
+            <!-- Duplicate for seamless loop -->
+            <div class="brand-logo">BMW</div>
+            <div class="brand-logo">Mercedes</div>
+            <div class="brand-logo">Toyota</div>
+            <div class="brand-logo">Honda</div>
+            <div class="brand-logo">Tesla</div>
+            <div class="brand-logo">Audi</div>
+            <div class="brand-logo">Lexus</div>
+            <div class="brand-logo">Porsche</div>
+        </div>
+    </section>
+
+    <!-- ===================================
+         TESTIMONIALS
+    =================================== -->
+    <section class="section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real experiences from thousands of satisfied drivers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">SM</div>
+                        <div class="testimonial-info">
+                            <h4>Sarah Mitchell</h4>
+                            <div class="testimonial-rating">★★★★★ 5.0</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "The booking process was incredibly smooth, and the car was in pristine condition. DriveLux made my business trip stress-free. Highly recommended!"
+                    </p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">JC</div>
+                        <div class="testimonial-info">
+                            <h4>James Chen</h4>
+                            <div class="testimonial-rating">★★★★★ 5.0</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Excellent customer service and transparent pricing. No hidden fees, exactly as advertised. I'll definitely be using DriveLux for all future rentals."
+                    </p>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">EP</div>
+                        <div class="testimonial-info">
+                            <h4>Emily Parker</h4>
+                            <div class="testimonial-rating">★★★★★ 5.0</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "I was impressed by the variety of vehicles and the professionalism of the team. The 24/7 support really came through when I needed assistance."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+         CTA SECTION
+    =================================== -->
+    <section class="cta-section fade-in">
+        <div class="container">
+            <h2 class="cta-title">Ready to Hit the Road?</h2>
+            <p class="cta-subtitle">Book your perfect car today and experience the DriveLux difference</p>
+            <a href="/booking" class="btn btn-light">Start Your Rental</a>
+        </div>
+    </section>
+
+    <!-- ===================================
+         FAQ SECTION
+    =================================== -->
+    <section class="section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about renting with DriveLux</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What documents do I need to rent a car?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        You'll need a valid driver's license, a credit card in your name, and proof of insurance. International renters may also need an International Driving Permit (IDP) depending on their country of origin.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What is your cancellation policy?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        We offer free cancellation up to 48 hours before your scheduled pickup time. Cancellations made within 48 hours may incur a small fee. Please review our full terms and conditions for complete details.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Is insurance included in the rental price?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes, all our rentals include comprehensive insurance coverage as standard. You can also opt for additional coverage options during the booking process for extra peace of mind.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I add an additional driver?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Absolutely! You can add additional drivers during booking or at pickup. Each additional driver must meet our age and license requirements and will need to be present with their documents.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What happens if I return the car late?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        We understand that plans change. If you need to extend your rental, please contact us as soon as possible. Late returns may incur additional charges based on our daily rate, subject to vehicle availability.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+         FOOTER
+    =================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="logo" style="color: var(--primary); margin-bottom: var(--spacing-md);">
+                        <span>🚗</span> DriveLux
+                    </h3>
+                    <p>Your trusted partner for premium car rentals. We're committed to providing exceptional service, transparent pricing, and a seamless rental experience.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" aria-label="Facebook">f</a>
+                        <a href="https://twitter.com" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="https://instagram.com" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/cars">Browse Cars</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="/services/corporate">Corporate Rentals</a></li>
+                        <li><a href="/services/long-term">Long-term Leasing</a></li>
+                        <li><a href="/services/airport">Airport Pickup</a></li>
+                        <li><a href="/services/chauffeur">Chauffeur Service</a></li>
+                        <li><a href="/insurance">Insurance Options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ info@drivelux.com</li>
+                        <li>📍 123 Rental Drive, Miami, FL 33101</li>
+                        <li style="margin-top: var(--spacing-md);">
+                            <strong>Hours:</strong><br>
+                            Mon-Fri: 7AM - 10PM<br>
+                            Sat-Sun: 8AM - 8PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 DriveLux Car Rentals. All rights reserved. | <a href="/privacy" style="color: var(--primary);">Privacy Policy</a> | <a href="/terms" style="color: var(--primary);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================
+         BACK TO TOP BUTTON
+    =================================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
