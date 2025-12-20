@@ -250,6 +250,7 @@ button {
     padding-bottom: 40px;
     position: relative;
     overflow: hidden;
+    margin-top: 10px;
 }
 
 .hero-content {
@@ -901,6 +902,17 @@ button {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--surface);
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md);
+        box-shadow: var(--shadow-lg);
+        border-radius: var(--radius-md);
+        z-index: 1000;
     }
 
     .mobile-menu-btn {
@@ -938,6 +950,16 @@ button {
 
     .steps-grid {
         grid-template-columns: 1fr;
+    }
+
+    .footer-content{
+        text-align: center;
+    }
+
+    .social-links {
+        margin: 20px auto;
+        display: flex;
+        justify-content: center;
     }
 }
 
