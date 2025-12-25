@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our complete fleet of rental cars at LuxuDrive. Find the perfect vehicle for your needs with our easy filtering system.">
+    <meta name="keywords" content="car rental, luxury cars, economy cars, SUV rental, car fleet, vehicle rental">
+    <title>Our Cars - LuxuDrive Car Rentals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Our Cars - LuxuDrive",
+        "description": "Browse our complete fleet of rental cars at LuxuDrive. Find the perfect vehicle for your needs with our easy filtering system.",
+        "url": "https://luxudrive.com/cars"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ===================================
+        HEADER / NAVIGATION
+    =================================== -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="/" class="logo">
+                LuxuDrive
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/cars" class="active">Cars</a></li>
+                <li><a href="/pricing">Pricing</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/booking" class="btn btn-primary btn-small">Book a Car</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ===================================
+        PAGE HEADER
+    =================================== -->
+    <section class="hero">
+        <!-- Background Car Image -->
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&q=80&w=1200" alt="Luxury Car Background" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="floating-car floating-car-1">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=200" alt="Sports Car">
+            </div>
+            <div class="floating-car floating-car-2">
+                <img src="https://images.unsplash.com/photo-1617469767053-d3b523a0b982?auto=format&fit=crop&q=80&w=200" alt="Electric Car">
+            </div>
+            <div class="floating-car floating-car-3">
+                <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&q=80&w=200" alt="SUV">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge-main">
+                        <span class="hero-badge-icon">🚗</span>
+                        Premium Fleet
+                    </div>
+                    <h1 class="hero-title">
+                        <span style="color: #e8e5e5;">Discover Your</span><br>
+                        <span>Perfect Ride</span>
+                    </h1>
+                    <p class="hero-subtitle" style="color: #e8e5e5;">
+                        From compact economy cars to luxury sedans and powerful SUVs. Choose from our extensive collection of premium vehicles, all maintained to the highest standards with transparent pricing and exceptional service.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Car Models</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support</div>
+                        </div>
+                        <div class="hero-stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Satisfaction</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#carsGrid" class="btn btn-primary">Explore Fleet</a>
+                        <a href="/booking" class="btn btn-secondary">Book Now</a>
+                    </div>
+                    <div class="hero-badges">
+                        <div class="hero-badge">
+                            <span class="hero-badge-icon">✓</span>
+                            Fully Insured
+                        </div>
+                        <div class="hero-badge">
+                            <span class="hero-badge-icon">✓</span>
+                            No Hidden Fees
+                        </div>
+                        <div class="hero-badge">
+                            <span class="hero-badge-icon">✓</span>
+                            Free Cancellation
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Showcase -->
+                <div class="hero-visual fade-in">
+                    <div class="hero-showcase">
+                        <div class="showcase-car showcase-car-main">
+                            <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=500&q=80" alt="Luxury Sedan" class="showcase-image">
+                            <div class="showcase-info">
+                                <h3>Luxury Sedans</h3>
+                                <p>Premium comfort & performance</p>
+                            </div>
+                        </div>
+                        <div class="showcase-car showcase-car-secondary">
+                            <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=400&q=80" alt="Electric Car" class="showcase-image">
+                            <div class="showcase-info">
+                                <h3>Electric Vehicles</h3>
+                                <p>Eco-friendly & efficient</p>
+                            </div>
+                        </div>
+                        <div class="showcase-car showcase-car-tertiary">
+                            <img src="https://images.unsplash.com/photo-1549399735-cef2e2c3f638?w=400&q=80" alt="SUV" class="showcase-image">
+                            <div class="showcase-info">
+                                <h3>Family SUVs</h3>
+                                <p>Spacious & versatile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <p>Scroll to explore</p>
+        </div>
+    </section>
+
+    <!-- ===================================
+        HOW IT WORKS
+    =================================== -->
+    <section class="section fade-in" style="background-color: var(--surface);">
+        <div class="container">
+            <div class="how-it-works-simple">
+                <div class="how-item-simple">
+                    <span class="check-icon">✓</span>
+                    <p>Browse through our extensive fleet of vehicles using our intuitive filters</p>
+                </div>
+                <div class="how-item-simple">
+                    <span class="check-icon">✓</span>
+                    <p>Our streamlined booking process takes just minutes with secure payments</p>
+                </div>
+                <div class="how-item-simple">
+                    <span class="check-icon">✓</span>
+                    <p>Pick up your vehicle at convenient locations with 24/7 support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+        CARS & FILTERS
+    =================================== -->
+    <section class="section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">All Available Cars</h2>
+                <p class="section-subtitle">Choose from our complete collection of rental vehicles</p>
+            </div>
+            <div class="cars-layout">
+                <!-- Sidebar Filters -->
+                <aside class="filters-sidebar">
+                    <div class="filters-container">
+                        <div class="filters-header">
+                            <h3>Filter & Find Your Perfect Car</h3>
+                        </div>
+
+                        <div class="filters-grid">
+                            <!-- Quick Category Buttons -->
+                            <div class="filter-group">
+                                <label class="filter-label">Quick Categories</label>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn active" data-filter="all">All Cars</button>
+                                    <button class="filter-btn" data-filter="economy">Economy</button>
+                                    <button class="filter-btn" data-filter="suv">SUV</button>
+                                    <button class="filter-btn" data-filter="luxury">Luxury</button>
+                                    <button class="filter-btn" data-filter="sports">Sports</button>
+                                    <button class="filter-btn" data-filter="electric">Electric</button>
+                                </div>
+                            </div>
+
+                            <!-- Brand Select -->
+                            <div class="filter-group">
+                                <label class="filter-label" for="brandSelect">Brand</label>
+                                <select id="brandSelect" class="filter-select">
+                                    <option value="">All Brands</option>
+                                    <option value="toyota">Toyota</option>
+                                    <option value="honda">Honda</option>
+                                    <option value="bmw">BMW</option>
+                                    <option value="mercedes">Mercedes-Benz</option>
+                                    <option value="audi">Audi</option>
+                                    <option value="tesla">Tesla</option>
+                                    <option value="ford">Ford</option>
+                                    <option value="porsche">Porsche</option>
+                                    <option value="chevrolet">Chevrolet</option>
+                                    <option value="lexus">Lexus</option>
+                                </select>
+                            </div>
+
+                            <!-- Transmission -->
+                            <div class="filter-group">
+                                <label class="filter-label" for="transmissionSelect">Transmission</label>
+                                <select id="transmissionSelect" class="filter-select">
+                                    <option value="">Any Transmission</option>
+                                    <option value="automatic">Automatic</option>
+                                    <option value="manual">Manual</option>
+                                </select>
+                            </div>
+
+                            <!-- Fuel Type -->
+                            <div class="filter-group">
+                                <label class="filter-label" for="fuelSelect">Fuel Type</label>
+                                <select id="fuelSelect" class="filter-select">
+                                    <option value="">Any Fuel Type</option>
+                                    <option value="petrol">Petrol</option>
+                                    <option value="diesel">Diesel</option>
+                                    <option value="hybrid">Hybrid</option>
+                                    <option value="electric">Electric</option>
+                                </select>
+                            </div>
+
+                            <!-- Seats -->
+                            <div class="filter-group">
+                                <label class="filter-label" for="seatsSelect">Seats</label>
+                                <select id="seatsSelect" class="filter-select">
+                                    <option value="">Any Seats</option>
+                                    <option value="2">2 Seats</option>
+                                    <option value="4">4 Seats</option>
+                                    <option value="5">5 Seats</option>
+                                    <option value="7">7+ Seats</option>
+                                </select>
+                            </div>
+
+                            <!-- Price Range -->
+                            <div class="filter-group">
+                                <label class="filter-label">Price Range (per day)</label>
+                                <div class="price-range">
+                                    <input type="number" id="minPrice" class="price-input" placeholder="Min $" min="0" step="5">
+                                    <span class="price-separator">-</span>
+                                    <input type="number" id="maxPrice" class="price-input" placeholder="Max $" min="0" step="5">
+                                </div>
+                            </div>
+
+                            <!-- Color -->
+                            <div class="filter-group">
+                                <label class="filter-label" for="colorSelect">Color</label>
+                                <select id="colorSelect" class="filter-select">
+                                    <option value="">Any Color</option>
+                                    <option value="black">Black</option>
+                                    <option value="white">White</option>
+                                    <option value="silver">Silver</option>
+                                    <option value="gray">Gray</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="red">Red</option>
+                                    <option value="green">Green</option>
+                                    <option value="orange">Orange</option>
+                                </select>
+                            </div>
+
+                            <!-- Search -->
+                            <div class="filter-group">
+                                <label class="filter-label" for="searchInput">Search Cars</label>
+                                <input type="text" id="searchInput" class="search-input" placeholder="Search by model name...">
+                            </div>
+
+                            <!-- Filter Button -->
+                            <div class="filter-group">
+                                <button id="applyFilters" class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-md);">Apply Filters</button>
+                            </div>
+                        </div>
+
+                        <!-- Active Filters Display -->
+                        <div class="active-filters" id="activeFilters" style="display: none;">
+                            <span class="active-filters-label">Active Filters:</span>
+                            <div class="active-filters-list" id="activeFiltersList"></div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="cars-main">
+                    <div class="cars-grid" id="carsGrid">
+                <!-- Economy Cars -->
+                <div class="car-card" data-category="economy" data-brand="toyota" data-transmission="automatic" data-fuel="petrol" data-seats="5" data-price="42" data-color="silver">
+                    <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=500&q=80" alt="Toyota Corolla" class="car-image" loading="lazy">
+                    <div class="car-content">
+                        <span class="car-badge">Economy</span>
+                        <h3 class="car-name">Toyota Corolla</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Petrol</span>
+                            <span class="car-feature">👥 5 seats</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$42<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=toyota-corolla" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="economy" data-brand="honda" data-transmission="automatic" data-fuel="petrol" data-seats="5" data-price="45" data-color="white">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80" alt="Honda Civic" class="car-image" loading="lazy">
+                    <div class="car-content">
+                        <span class="car-badge">Economy</span>
+                        <h3 class="car-name">Honda Civic</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Petrol</span>
+                            <span class="car-feature">👥 5 seats</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$45<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=honda-civic" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SUV Cars -->
+                <div class="car-card" data-category="suv" data-brand="toyota" data-transmission="automatic" data-fuel="hybrid" data-seats="5" data-price="75" data-color="blue">
+                    <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=500&q=80" alt="Toyota RAV4" class="car-image" loading="lazy">
+                    <div class="car-content">
+                        <span class="car-badge">SUV</span>
+                        <h3 class="car-name">Toyota RAV4</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Hybrid</span>
+                            <span class="car-feature">👥 5 seats</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$75<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=toyota-rav4" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="suv" data-brand="honda" data-transmission="automatic" data-fuel="petrol" data-seats="5" data-price="68" data-color="black">
+                    <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=500&q=80" alt="Honda CR-V" class="car-image" loading="lazy">
+                    <div class="car-content">
+                        <span class="car-badge">SUV</span>
+                        <h3 class="car-name">Honda CR-V</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Petrol</span>
+                            <span class="car-feature">👥 5 seats</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$68<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=honda-crv" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="suv" data-brand="ford" data-transmission="automatic" data-fuel="petrol" data-seats="7" data-price="85" data-color="red">
+                    <img src="https://images.unsplash.com/photo-1549399735-cef2e2c3f638?w=500&q=80" alt="Ford Explorer" class="car-image" loading="lazy">
+                    <div class="car-content">
+                        <span class="car-badge">SUV</span>
+                        <h3 class="car-name">Ford Explorer</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Petrol</span>
+                            <span class="car-feature">👥 7 seats</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$85<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=ford-explorer" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Luxury Cars -->
+                <div class="car-card" data-category="luxury" data-brand="bmw" data-transmission="automatic" data-fuel="diesel" data-seats="5" data-price="145" data-color="black">
+                    <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=500&q=80" alt="BMW 5 Series" class="car-image" loading="lazy">
+                    <div class="car-content">
+                        <span class="car-badge">Luxury</span>
+                        <h3 class="car-name">BMW 5 Series</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Diesel</span>
+                            <span class="car-feature">👥 5 seats</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$145<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=bmw-5-series" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="luxury" data-brand="mercedes" data-transmission="automatic" data-fuel="petrol" data-seats="5" data-price="165" data-color="silver">
+                    <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=500&q=80" alt="Mercedes-Benz C-Class" class="car-image" loading="lazy">
+                    <div class="car-content">
+                        <span class="car-badge">Luxury</span>
+                        <h3 class="car-name">Mercedes C-Class</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Petrol</span>
+                            <span class="car-feature">👥 5 seats</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$165<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=mercedes-c-class" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="luxury" data-brand="audi" data-transmission="automatic" data-fuel="diesel" data-seats="5" data-price="155" data-color="gray">
+                    <img src="https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?w=500&q=80" alt="Audi A6" class="car-image" loading="lazy">
+                    <div class="car-content">
+                        <span class="car-badge">Luxury</span>
+                        <h3 class="car-name">Audi A6</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Diesel</span>
+                            <span class="car-feature">👥 5 seats</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$155<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=audi-a6" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sports Cars -->
+                <div class="car-card" data-category="sports" data-brand="porsche" data-transmission="automatic" data-fuel="petrol" data-seats="4" data-price="250" data-color="red">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500&q=80" alt="Porsche 911" class="car-image" loading="lazy">
+                    <div class="car-content">
+                        <span class="car-badge">Sports</span>
+                        <h3 class="car-name">Porsche 911</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⛽ Petrol</span>
+                            <span class="car-feature">👥 4 seats</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$250<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=porsche-911" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="sports" data-brand="chevrolet" data-transmission="manual" data-fuel="petrol" data-seats="2" data-price="220" data-color="orange">
+                    <img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?w=500&q=80" alt="Chevrolet Corvette" class="car-image" loading="lazy">
+                    <div class="car-content">
+                        <span class="car-badge">Sports</span>
+                        <h3 class="car-name">Chevrolet Corvette</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Manual</span>
+                            <span class="car-feature">⛽ Petrol</span>
+                            <span class="car-feature">👥 2 seats</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$220<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=chevrolet-corvette" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Electric Cars -->
+                <div class="car-card" data-category="electric" data-brand="tesla" data-transmission="automatic" data-fuel="electric" data-seats="5" data-price="125" data-color="white">
+                    <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=500&q=80" alt="Tesla Model 3" class="car-image" loading="lazy">
+                    <div class="car-content">
+                        <span class="car-badge">Electric</span>
+                        <h3 class="car-name">Tesla Model 3</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⚡ Electric</span>
+                            <span class="car-feature">👥 5 seats</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$125<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=tesla-model-3" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-card" data-category="electric" data-brand="tesla" data-transmission="automatic" data-fuel="electric" data-seats="5" data-price="135" data-color="black">
+                    <img src="https://images.unsplash.com/photo-1617469767053-d3b523a0b982?w=500&q=80" alt="Tesla Model Y" class="car-image" loading="lazy">
+                    <div class="car-content">
+                        <span class="car-badge">Electric</span>
+                        <h3 class="car-name">Tesla Model Y</h3>
+                        <div class="car-features">
+                            <span class="car-feature">⚙️ Automatic</span>
+                            <span class="car-feature">⚡ Electric</span>
+                            <span class="car-feature">👥 5 seats</span>
+                        </div>
+                        <div class="car-footer">
+                            <div>
+                                <div class="car-price">$135<span class="car-price-label">/day</span></div>
+                            </div>
+                            <a href="/booking?car=tesla-model-y" class="btn btn-primary btn-small">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination" id="pagination">
+                    <button class="pagination-btn" id="prevPage" disabled>&larr; Previous</button>
+                    <div class="pagination-numbers" id="paginationNumbers"></div>
+                    <button class="pagination-btn" id="nextPage">Next &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+        POPULAR RENTAL CAR CHOICES
+    =================================== -->
+    <section class="section fade-in" style="background-color: var(--surface);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Rental Car Choices</h2>
+                <p class="section-subtitle">Explore our most popular vehicle categories</p>
+            </div>
+            <div class="popular-choices-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-xl);">
+                <div class="choice-card" style="text-align: center; padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); background: white;">
+                    <div class="choice-image" style="height: 200px; margin-bottom: var(--spacing-lg); overflow: hidden; border-radius: var(--radius-md);">
+                        <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=400&q=80" alt="Economy Cars" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">Economy</h3>
+                    <p style="color: var(--text-muted); margin-bottom: var(--spacing-lg);">Perfect for city driving and budget-conscious travelers. Fuel-efficient and easy to park.</p>
+                    <a href="#carsGrid" class="btn btn-primary">View Economy Cars</a>
+                </div>
+
+                <div class="choice-card" style="text-align: center; padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); background: white;">
+                    <div class="choice-image" style="height: 200px; margin-bottom: var(--spacing-lg); overflow: hidden; border-radius: var(--radius-md);">
+                        <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=400&q=80" alt="SUV Cars" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">SUV</h3>
+                    <p style="color: var(--text-muted); margin-bottom: var(--spacing-lg);">Spacious and versatile for families, adventures, and those who need extra cargo space.</p>
+                    <a href="#carsGrid" class="btn btn-primary">View SUVs</a>
+                </div>
+
+                <div class="choice-card" style="text-align: center; padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); background: white;">
+                    <div class="choice-image" style="height: 200px; margin-bottom: var(--spacing-lg); overflow: hidden; border-radius: var(--radius-md);">
+                        <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?w=400&q=80" alt="Luxury Cars" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">Luxury</h3>
+                    <p style="color: var(--text-muted); margin-bottom: var(--spacing-lg);">Premium vehicles with superior comfort, technology, and performance for discerning drivers.</p>
+                    <a href="#carsGrid" class="btn btn-primary">View Luxury Cars</a>
+                </div>
+
+                <div class="choice-card" style="text-align: center; padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); background: white;">
+                    <div class="choice-image" style="height: 200px; margin-bottom: var(--spacing-lg); overflow: hidden; border-radius: var(--radius-md);">
+                        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&q=80" alt="Sports Cars" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">Sports</h3>
+                    <p style="color: var(--text-muted); margin-bottom: var(--spacing-lg);">High-performance vehicles for those seeking excitement and thrilling driving experiences.</p>
+                    <a href="#carsGrid" class="btn btn-primary">View Sports Cars</a>
+                </div>
+
+                <div class="choice-card" style="text-align: center; padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); background: white;">
+                    <div class="choice-image" style="height: 200px; margin-bottom: var(--spacing-lg); overflow: hidden; border-radius: var(--radius-md);">
+                        <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=400&q=80" alt="Electric Cars" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">Electric</h3>
+                    <p style="color: var(--text-muted); margin-bottom: var(--spacing-lg);">Eco-friendly vehicles with cutting-edge technology, instant torque, and zero emissions.</p>
+                    <a href="#carsGrid" class="btn btn-primary">View Electric Cars</a>
+                </div>
+
+                <div class="choice-card" style="text-align: center; padding: var(--spacing-xl); border-radius: var(--radius-lg); box-shadow: var(--shadow-md); background: white;">
+                    <div class="choice-image" style="height: 200px; margin-bottom: var(--spacing-lg); overflow: hidden; border-radius: var(--radius-md);">
+                        <img src="https://images.unsplash.com/photo-1549399735-cef2e2c3f638?w=400&q=80" alt="Family Cars" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: var(--spacing-md);">Family</h3>
+                    <p style="color: var(--text-muted); margin-bottom: var(--spacing-lg);">Comfortable and spacious vehicles designed for family trips with plenty of room for everyone.</p>
+                    <a href="#carsGrid" class="btn btn-primary">View Family Cars</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+        FOOTER
+    =================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">LuxuDrive
+                    </h3>
+                    <p>Your trusted partner for premium car rentals. We're committed to providing exceptional service, transparent pricing, and a seamless rental experience.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" aria-label="Facebook">f</a>
+                        <a href="https://twitter.com" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="https://instagram.com" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/cars">Browse Cars</a></li>
+                        <li><a href="/pricing">Pricing</a></li>
+                        <li><a href="/about">About Us</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="/services/corporate">Corporate Rentals</a></li>
+                        <li><a href="/services/long-term">Long-term Leasing</a></li>
+                        <li><a href="/services/airport">Airport Pickup</a></li>
+                        <li><a href="/services/chauffeur">Chauffeur Service</a></li>
+                        <li><a href="/insurance">Insurance Options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ info@luxudrive.com</li>
+                        <li>📍 123 Rental Drive, Miami, FL 33101</li>
+                        <li style="margin-top: var(--spacing-md);">
+                            <strong>Hours:</strong><br>
+                            Mon-Fri: 7AM - 10PM<br>
+                            Sat-Sun: 8AM - 8PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxuDrive Car Rentals. All rights reserved. | <a href="/privacy" style="color: var(--primary);">Privacy Policy</a> | <a href="/terms" style="color: var(--primary);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================
+        BACK TO TOP BUTTON
+    =================================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Enhanced filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const carCards = document.querySelectorAll('.car-card');
+            const brandSelect = document.getElementById('brandSelect');
+            const transmissionSelect = document.getElementById('transmissionSelect');
+            const fuelSelect = document.getElementById('fuelSelect');
+            const seatsSelect = document.getElementById('seatsSelect');
+            const minPriceInput = document.getElementById('minPrice');
+            const maxPriceInput = document.getElementById('maxPrice');
+            const colorSelect = document.getElementById('colorSelect');
+            const searchInput = document.getElementById('searchInput');
+            const clearFiltersBtn = document.getElementById('clearFilters');
+            const activeFiltersDiv = document.getElementById('activeFilters');
+            const activeFiltersList = document.getElementById('activeFiltersList');
+
+            let activeFilters = {
+                category: 'all',
+                brand: '',
+                transmission: '',
+                fuel: '',
+                seats: '',
+                minPrice: '',
+                maxPrice: '',
+                color: '',
+                search: ''
+            };
+
+            // Update active filters display
+            function updateActiveFiltersDisplay() {
+                activeFiltersList.innerHTML = '';
+                let hasActiveFilters = false;
+
+                Object.entries(activeFilters).forEach(([key, value]) => {
+                    if (value && value !== 'all') {
+                        hasActiveFilters = true;
+                        const filterTag = document.createElement('div');
+                        filterTag.className = 'active-filter-tag';
+
+                        let label = '';
+                        switch(key) {
+                            case 'category': label = value.charAt(0).toUpperCase() + value.slice(1); break;
+                            case 'brand': label = `Brand: ${value.charAt(0).toUpperCase() + value.slice(1)}`; break;
+                            case 'transmission': label = `Transmission: ${value.charAt(0).toUpperCase() + value.slice(1)}`; break;
+                            case 'fuel': label = `Fuel: ${value.charAt(0).toUpperCase() + value.slice(1)}`; break;
+                            case 'seats': label = `Seats: ${value}`; break;
+                            case 'minPrice': label = `Min Price: $${value}`; break;
+                            case 'maxPrice': label = `Max Price: $${value}`; break;
+                            case 'color': label = `Color: ${value.charAt(0).toUpperCase() + value.slice(1)}`; break;
+                            case 'search': label = `Search: "${value}"`; break;
+                        }
+
+                        filterTag.innerHTML = `
+                            ${label}
+                            <span class="remove-filter" data-filter="${key}">×</span>
+                        `;
+                        activeFiltersList.appendChild(filterTag);
+                    }
+                });
+
+                activeFiltersDiv.style.display = hasActiveFilters ? 'block' : 'none';
+            }
+
+            // Pagination variables
+            let currentPage = 1;
+            const carsPerPage = 9;
+            let totalPages = 1;
+
+            // Get pagination elements
+            const pagination = document.getElementById('pagination');
+            const prevPageBtn = document.getElementById('prevPage');
+            const nextPageBtn = document.getElementById('nextPage');
+            const paginationNumbers = document.getElementById('paginationNumbers');
+
+            // Apply filters button
+            const applyFiltersBtn = document.getElementById('applyFilters');
+            applyFiltersBtn.addEventListener('click', function() {
+                filterCars();
+                updateActiveFiltersDisplay();
+                currentPage = 1; // Reset to first page when filtering
+                updatePagination();
+            });
+
+            // Update pagination display
+            function updatePagination() {
+                const visibleCars = Array.from(carCards).filter(card => card.style.display !== 'none');
+                totalPages = Math.ceil(visibleCars.length / carsPerPage);
+
+                // Show/hide pagination
+                if (totalPages <= 1) {
+                    pagination.style.display = 'none';
+                    return;
+                }
+                pagination.style.display = 'flex';
+
+                // Update page numbers
+                paginationNumbers.innerHTML = '';
+                for (let i = 1; i <= totalPages; i++) {
+                    const pageBtn = document.createElement('button');
+                    pageBtn.className = `pagination-number ${i === currentPage ? 'active' : ''}`;
+                    pageBtn.textContent = i;
+                    pageBtn.addEventListener('click', () => {
+                        currentPage = i;
+                        showPage(currentPage);
+                        updatePagination();
+                    });
+                    paginationNumbers.appendChild(pageBtn);
+                }
+
+                // Update prev/next buttons
+                prevPageBtn.disabled = currentPage === 1;
+                nextPageBtn.disabled = currentPage === totalPages;
+
+                showPage(currentPage);
+            }
+
+            // Show specific page
+            function showPage(page) {
+                const visibleCars = Array.from(carCards).filter(card => card.style.display !== 'none');
+                const startIndex = (page - 1) * carsPerPage;
+                const endIndex = startIndex + carsPerPage;
+
+                carCards.forEach(card => card.style.display = 'none');
+
+                visibleCars.slice(startIndex, endIndex).forEach(card => {
+                    card.style.display = 'block';
+                });
+            }
+
+            // Pagination button events
+            prevPageBtn.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    showPage(currentPage);
+                    updatePagination();
+                }
+            });
+
+            nextPageBtn.addEventListener('click', () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    showPage(currentPage);
+                    updatePagination();
+                }
+            });
+
+            // Category button filters (these should still work immediately for quick filtering)
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    button.classList.add('active');
+
+                    activeFilters.category = button.getAttribute('data-filter');
+                    filterCars();
+                    updateActiveFiltersDisplay();
+                });
+            });
+
+            // Note: Other filters now require clicking "Apply Filters" button
+            // The event listeners for selects and inputs have been removed for manual filtering
+
+            // Clear all filters
+            clearFiltersBtn.addEventListener('click', function() {
+                // Reset all filters
+                activeFilters = {
+                    category: 'all',
+                    brand: '',
+                    transmission: '',
+                    fuel: '',
+                    seats: '',
+                    minPrice: '',
+                    maxPrice: '',
+                    color: '',
+                    search: ''
+                };
+
+                // Reset UI elements
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                document.querySelector('[data-filter="all"]').classList.add('active');
+
+                brandSelect.value = '';
+                transmissionSelect.value = '';
+                fuelSelect.value = '';
+                seatsSelect.value = '';
+                minPriceInput.value = '';
+                maxPriceInput.value = '';
+                colorSelect.value = '';
+                searchInput.value = '';
+
+                // Show all cars and reset pagination
+                carCards.forEach(card => card.style.display = 'block');
+                activeFiltersDiv.style.display = 'none';
+                currentPage = 1;
+                updatePagination();
+            });
+
+            // Remove individual filters
+            activeFiltersList.addEventListener('click', function(e) {
+                if (e.target.classList.contains('remove-filter')) {
+                    const filterKey = e.target.dataset.filter;
+
+                    // Reset the specific filter
+                    activeFilters[filterKey] = '';
+
+                    // Reset corresponding UI element
+                    switch(filterKey) {
+                        case 'category':
+                            filterButtons.forEach(btn => btn.classList.remove('active'));
+                            document.querySelector('[data-filter="all"]').classList.add('active');
+                            activeFilters.category = 'all';
+                            break;
+                        case 'brand':
+                            brandSelect.value = '';
+                            break;
+                        case 'transmission':
+                            transmissionSelect.value = '';
+                            break;
+                        case 'fuel':
+                            fuelSelect.value = '';
+                            break;
+                        case 'seats':
+                            seatsSelect.value = '';
+                            break;
+                        case 'minPrice':
+                            minPriceInput.value = '';
+                            break;
+                        case 'maxPrice':
+                            maxPriceInput.value = '';
+                            break;
+                        case 'color':
+                            colorSelect.value = '';
+                            break;
+                        case 'search':
+                            searchInput.value = '';
+                            break;
+                    }
+
+                    filterCars();
+                    updateActiveFiltersDisplay();
+                }
+            });
+        });
+
+        // Initialize pagination on page load
+        updatePagination();
+    </script>
+
+</body>
+</html></content>
+<parameter name="filePath">c:\Users\zamor\Documents\wed design\luxudrive\cars.html
