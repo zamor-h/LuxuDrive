@@ -156,133 +156,10 @@
     </section>
 
     <!-- ===================================
-        FILTERS
-    =================================== -->
-    <section class="section" style="padding-top: var(--spacing-xl);">
-        <div class="container">
-            <div class="filters-container">
-                <div class="filters-header">
-                    <h3>Filter & Find Your Perfect Car</h3>
-                    <button class="clear-filters-btn" id="clearFilters">Clear All</button>
-                </div>
-
-                <div class="filters-grid">
-                    <!-- Quick Category Buttons -->
-                    <div class="filter-group">
-                        <label class="filter-label">Quick Categories</label>
-                        <div class="filter-buttons">
-                            <button class="filter-btn active" data-filter="all">All Cars</button>
-                            <button class="filter-btn" data-filter="economy">Economy</button>
-                            <button class="filter-btn" data-filter="suv">SUV</button>
-                            <button class="filter-btn" data-filter="luxury">Luxury</button>
-                            <button class="filter-btn" data-filter="sports">Sports</button>
-                            <button class="filter-btn" data-filter="electric">Electric</button>
-                        </div>
-                    </div>
-
-                    <!-- Brand Select -->
-                    <div class="filter-group">
-                        <label class="filter-label" for="brandSelect">Brand</label>
-                        <select id="brandSelect" class="filter-select">
-                            <option value="">All Brands</option>
-                            <option value="toyota">Toyota</option>
-                            <option value="honda">Honda</option>
-                            <option value="bmw">BMW</option>
-                            <option value="mercedes">Mercedes-Benz</option>
-                            <option value="audi">Audi</option>
-                            <option value="tesla">Tesla</option>
-                            <option value="ford">Ford</option>
-                            <option value="porsche">Porsche</option>
-                            <option value="chevrolet">Chevrolet</option>
-                            <option value="lexus">Lexus</option>
-                        </select>
-                    </div>
-
-                    <!-- Transmission -->
-                    <div class="filter-group">
-                        <label class="filter-label" for="transmissionSelect">Transmission</label>
-                        <select id="transmissionSelect" class="filter-select">
-                            <option value="">Any Transmission</option>
-                            <option value="automatic">Automatic</option>
-                            <option value="manual">Manual</option>
-                        </select>
-                    </div>
-
-                    <!-- Fuel Type -->
-                    <div class="filter-group">
-                        <label class="filter-label" for="fuelSelect">Fuel Type</label>
-                        <select id="fuelSelect" class="filter-select">
-                            <option value="">Any Fuel Type</option>
-                            <option value="petrol">Petrol</option>
-                            <option value="diesel">Diesel</option>
-                            <option value="hybrid">Hybrid</option>
-                            <option value="electric">Electric</option>
-                        </select>
-                    </div>
-
-                    <!-- Seats -->
-                    <div class="filter-group">
-                        <label class="filter-label" for="seatsSelect">Seats</label>
-                        <select id="seatsSelect" class="filter-select">
-                            <option value="">Any Seats</option>
-                            <option value="2">2 Seats</option>
-                            <option value="4">4 Seats</option>
-                            <option value="5">5 Seats</option>
-                            <option value="7">7+ Seats</option>
-                        </select>
-                    </div>
-
-                    <!-- Price Range -->
-                    <div class="filter-group">
-                        <label class="filter-label">Price Range (per day)</label>
-                        <div class="price-range">
-                            <input type="number" id="minPrice" class="price-input" placeholder="Min $" min="0" step="5">
-                            <span class="price-separator">-</span>
-                            <input type="number" id="maxPrice" class="price-input" placeholder="Max $" min="0" step="5">
-                        </div>
-                    </div>
-
-                    <!-- Color -->
-                    <div class="filter-group">
-                        <label class="filter-label" for="colorSelect">Color</label>
-                        <select id="colorSelect" class="filter-select">
-                            <option value="">Any Color</option>
-                            <option value="black">Black</option>
-                            <option value="white">White</option>
-                            <option value="silver">Silver</option>
-                            <option value="gray">Gray</option>
-                            <option value="blue">Blue</option>
-                            <option value="red">Red</option>
-                            <option value="green">Green</option>
-                            <option value="orange">Orange</option>
-                        </select>
-                    </div>
-
-                    <!-- Search -->
-                    <div class="filter-group">
-                        <label class="filter-label" for="searchInput">Search Cars</label>
-                        <input type="text" id="searchInput" class="search-input" placeholder="Search by model name...">
-                    </div>
-                </div>
-
-                <!-- Active Filters Display -->
-                <div class="active-filters" id="activeFilters" style="display: none;">
-                    <span class="active-filters-label">Active Filters:</span>
-                    <div class="active-filters-list" id="activeFiltersList"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================================
         HOW IT WORKS
     =================================== -->
     <section class="section fade-in" style="background-color: var(--surface);">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">How It Works</h2>
-                <p class="section-subtitle">Simple, transparent, and hassle-free</p>
-            </div>
             <div class="how-it-works-simple">
                 <div class="how-item-simple">
                     <span class="check-icon">✓</span>
@@ -301,7 +178,7 @@
     </section>
 
     <!-- ===================================
-        ALL CARS
+        CARS & FILTERS
     =================================== -->
     <section class="section fade-in">
         <div class="container">
@@ -309,7 +186,129 @@
                 <h2 class="section-title">All Available Cars</h2>
                 <p class="section-subtitle">Choose from our complete collection of rental vehicles</p>
             </div>
-            <div class="cars-grid" id="carsGrid">
+            <div class="cars-layout">
+                <!-- Sidebar Filters -->
+                <aside class="filters-sidebar">
+                    <div class="filters-container">
+                        <div class="filters-header">
+                            <h3>Filter & Find Your Perfect Car</h3>
+                        </div>
+
+                        <div class="filters-grid">
+                            <!-- Quick Category Buttons -->
+                            <div class="filter-group">
+                                <label class="filter-label">Quick Categories</label>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn active" data-filter="all">All Cars</button>
+                                    <button class="filter-btn" data-filter="economy">Economy</button>
+                                    <button class="filter-btn" data-filter="suv">SUV</button>
+                                    <button class="filter-btn" data-filter="luxury">Luxury</button>
+                                    <button class="filter-btn" data-filter="sports">Sports</button>
+                                    <button class="filter-btn" data-filter="electric">Electric</button>
+                                </div>
+                            </div>
+
+                            <!-- Brand Select -->
+                            <div class="filter-group">
+                                <label class="filter-label" for="brandSelect">Brand</label>
+                                <select id="brandSelect" class="filter-select">
+                                    <option value="">All Brands</option>
+                                    <option value="toyota">Toyota</option>
+                                    <option value="honda">Honda</option>
+                                    <option value="bmw">BMW</option>
+                                    <option value="mercedes">Mercedes-Benz</option>
+                                    <option value="audi">Audi</option>
+                                    <option value="tesla">Tesla</option>
+                                    <option value="ford">Ford</option>
+                                    <option value="porsche">Porsche</option>
+                                    <option value="chevrolet">Chevrolet</option>
+                                    <option value="lexus">Lexus</option>
+                                </select>
+                            </div>
+
+                            <!-- Transmission -->
+                            <div class="filter-group">
+                                <label class="filter-label" for="transmissionSelect">Transmission</label>
+                                <select id="transmissionSelect" class="filter-select">
+                                    <option value="">Any Transmission</option>
+                                    <option value="automatic">Automatic</option>
+                                    <option value="manual">Manual</option>
+                                </select>
+                            </div>
+
+                            <!-- Fuel Type -->
+                            <div class="filter-group">
+                                <label class="filter-label" for="fuelSelect">Fuel Type</label>
+                                <select id="fuelSelect" class="filter-select">
+                                    <option value="">Any Fuel Type</option>
+                                    <option value="petrol">Petrol</option>
+                                    <option value="diesel">Diesel</option>
+                                    <option value="hybrid">Hybrid</option>
+                                    <option value="electric">Electric</option>
+                                </select>
+                            </div>
+
+                            <!-- Seats -->
+                            <div class="filter-group">
+                                <label class="filter-label" for="seatsSelect">Seats</label>
+                                <select id="seatsSelect" class="filter-select">
+                                    <option value="">Any Seats</option>
+                                    <option value="2">2 Seats</option>
+                                    <option value="4">4 Seats</option>
+                                    <option value="5">5 Seats</option>
+                                    <option value="7">7+ Seats</option>
+                                </select>
+                            </div>
+
+                            <!-- Price Range -->
+                            <div class="filter-group">
+                                <label class="filter-label">Price Range (per day)</label>
+                                <div class="price-range">
+                                    <input type="number" id="minPrice" class="price-input" placeholder="Min $" min="0" step="5">
+                                    <span class="price-separator">-</span>
+                                    <input type="number" id="maxPrice" class="price-input" placeholder="Max $" min="0" step="5">
+                                </div>
+                            </div>
+
+                            <!-- Color -->
+                            <div class="filter-group">
+                                <label class="filter-label" for="colorSelect">Color</label>
+                                <select id="colorSelect" class="filter-select">
+                                    <option value="">Any Color</option>
+                                    <option value="black">Black</option>
+                                    <option value="white">White</option>
+                                    <option value="silver">Silver</option>
+                                    <option value="gray">Gray</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="red">Red</option>
+                                    <option value="green">Green</option>
+                                    <option value="orange">Orange</option>
+                                </select>
+                            </div>
+
+                            <!-- Search -->
+                            <div class="filter-group">
+                                <label class="filter-label" for="searchInput">Search Cars</label>
+                                <input type="text" id="searchInput" class="search-input" placeholder="Search by model name...">
+                            </div>
+
+                            <!-- Filter Button -->
+                            <div class="filter-group">
+                                <button id="applyFilters" class="btn btn-primary" style="width: 100%; margin-top: var(--spacing-md);">Apply Filters</button>
+                            </div>
+                        </div>
+
+                        <!-- Active Filters Display -->
+                        <div class="active-filters" id="activeFilters" style="display: none;">
+                            <span class="active-filters-label">Active Filters:</span>
+                            <div class="active-filters-list" id="activeFiltersList"></div>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Content -->
+                <main class="cars-main">
+                    <div class="cars-grid" id="carsGrid">
                 <!-- Economy Cars -->
                 <div class="car-card" data-category="economy" data-brand="toyota" data-transmission="automatic" data-fuel="petrol" data-seats="5" data-price="42" data-color="silver">
                     <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=500&q=80" alt="Toyota Corolla" class="car-image" loading="lazy">
@@ -542,6 +541,13 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Pagination -->
+                <div class="pagination" id="pagination">
+                    <button class="pagination-btn" id="prevPage" disabled>&larr; Previous</button>
+                    <div class="pagination-numbers" id="paginationNumbers"></div>
+                    <button class="pagination-btn" id="nextPage">Next &rarr;</button>
+                </div>
             </div>
         </div>
     </section>
@@ -746,64 +752,90 @@
                 activeFiltersDiv.style.display = hasActiveFilters ? 'block' : 'none';
             }
 
-            // Filter cars based on active filters
-            function filterCars() {
-                carCards.forEach(card => {
-                    let show = true;
+            // Pagination variables
+            let currentPage = 1;
+            const carsPerPage = 9;
+            let totalPages = 1;
 
-                    // Category filter
-                    if (activeFilters.category !== 'all' && card.dataset.category !== activeFilters.category) {
-                        show = false;
-                    }
+            // Get pagination elements
+            const pagination = document.getElementById('pagination');
+            const prevPageBtn = document.getElementById('prevPage');
+            const nextPageBtn = document.getElementById('nextPage');
+            const paginationNumbers = document.getElementById('paginationNumbers');
 
-                    // Brand filter
-                    if (activeFilters.brand && card.dataset.brand !== activeFilters.brand) {
-                        show = false;
-                    }
+            // Apply filters button
+            const applyFiltersBtn = document.getElementById('applyFilters');
+            applyFiltersBtn.addEventListener('click', function() {
+                filterCars();
+                updateActiveFiltersDisplay();
+                currentPage = 1; // Reset to first page when filtering
+                updatePagination();
+            });
 
-                    // Transmission filter
-                    if (activeFilters.transmission && card.dataset.transmission !== activeFilters.transmission) {
-                        show = false;
-                    }
+            // Update pagination display
+            function updatePagination() {
+                const visibleCars = Array.from(carCards).filter(card => card.style.display !== 'none');
+                totalPages = Math.ceil(visibleCars.length / carsPerPage);
 
-                    // Fuel filter
-                    if (activeFilters.fuel && card.dataset.fuel !== activeFilters.fuel) {
-                        show = false;
-                    }
+                // Show/hide pagination
+                if (totalPages <= 1) {
+                    pagination.style.display = 'none';
+                    return;
+                }
+                pagination.style.display = 'flex';
 
-                    // Seats filter
-                    if (activeFilters.seats && card.dataset.seats !== activeFilters.seats) {
-                        show = false;
-                    }
+                // Update page numbers
+                paginationNumbers.innerHTML = '';
+                for (let i = 1; i <= totalPages; i++) {
+                    const pageBtn = document.createElement('button');
+                    pageBtn.className = `pagination-number ${i === currentPage ? 'active' : ''}`;
+                    pageBtn.textContent = i;
+                    pageBtn.addEventListener('click', () => {
+                        currentPage = i;
+                        showPage(currentPage);
+                        updatePagination();
+                    });
+                    paginationNumbers.appendChild(pageBtn);
+                }
 
-                    // Price filters
-                    const price = parseInt(card.dataset.price);
-                    if (activeFilters.minPrice && price < parseInt(activeFilters.minPrice)) {
-                        show = false;
-                    }
-                    if (activeFilters.maxPrice && price > parseInt(activeFilters.maxPrice)) {
-                        show = false;
-                    }
+                // Update prev/next buttons
+                prevPageBtn.disabled = currentPage === 1;
+                nextPageBtn.disabled = currentPage === totalPages;
 
-                    // Color filter
-                    if (activeFilters.color && card.dataset.color !== activeFilters.color) {
-                        show = false;
-                    }
+                showPage(currentPage);
+            }
 
-                    // Search filter
-                    if (activeFilters.search) {
-                        const carName = card.querySelector('.car-name').textContent.toLowerCase();
-                        const searchTerm = activeFilters.search.toLowerCase();
-                        if (!carName.includes(searchTerm)) {
-                            show = false;
-                        }
-                    }
+            // Show specific page
+            function showPage(page) {
+                const visibleCars = Array.from(carCards).filter(card => card.style.display !== 'none');
+                const startIndex = (page - 1) * carsPerPage;
+                const endIndex = startIndex + carsPerPage;
 
-                    card.style.display = show ? 'block' : 'none';
+                carCards.forEach(card => card.style.display = 'none');
+
+                visibleCars.slice(startIndex, endIndex).forEach(card => {
+                    card.style.display = 'block';
                 });
             }
 
-            // Category button filters
+            // Pagination button events
+            prevPageBtn.addEventListener('click', () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    showPage(currentPage);
+                    updatePagination();
+                }
+            });
+
+            nextPageBtn.addEventListener('click', () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    showPage(currentPage);
+                    updatePagination();
+                }
+            });
+
+            // Category button filters (these should still work immediately for quick filtering)
             filterButtons.forEach(button => {
                 button.addEventListener('click', () => {
                     filterButtons.forEach(btn => btn.classList.remove('active'));
@@ -815,60 +847,8 @@
                 });
             });
 
-            // Select filters
-            brandSelect.addEventListener('change', function() {
-                activeFilters.brand = this.value;
-                filterCars();
-                updateActiveFiltersDisplay();
-            });
-
-            transmissionSelect.addEventListener('change', function() {
-                activeFilters.transmission = this.value;
-                filterCars();
-                updateActiveFiltersDisplay();
-            });
-
-            fuelSelect.addEventListener('change', function() {
-                activeFilters.fuel = this.value;
-                filterCars();
-                updateActiveFiltersDisplay();
-            });
-
-            seatsSelect.addEventListener('change', function() {
-                activeFilters.seats = this.value;
-                filterCars();
-                updateActiveFiltersDisplay();
-            });
-
-            colorSelect.addEventListener('change', function() {
-                activeFilters.color = this.value;
-                filterCars();
-                updateActiveFiltersDisplay();
-            });
-
-            // Price inputs
-            minPriceInput.addEventListener('input', function() {
-                activeFilters.minPrice = this.value;
-                filterCars();
-                updateActiveFiltersDisplay();
-            });
-
-            maxPriceInput.addEventListener('input', function() {
-                activeFilters.maxPrice = this.value;
-                filterCars();
-                updateActiveFiltersDisplay();
-            });
-
-            // Search input with debounce
-            let searchTimeout;
-            searchInput.addEventListener('input', function() {
-                clearTimeout(searchTimeout);
-                searchTimeout = setTimeout(() => {
-                    activeFilters.search = this.value.trim();
-                    filterCars();
-                    updateActiveFiltersDisplay();
-                }, 300);
-            });
+            // Note: Other filters now require clicking "Apply Filters" button
+            // The event listeners for selects and inputs have been removed for manual filtering
 
             // Clear all filters
             clearFiltersBtn.addEventListener('click', function() {
@@ -898,9 +878,11 @@
                 colorSelect.value = '';
                 searchInput.value = '';
 
-                // Show all cars
+                // Show all cars and reset pagination
                 carCards.forEach(card => card.style.display = 'block');
                 activeFiltersDiv.style.display = 'none';
+                currentPage = 1;
+                updatePagination();
             });
 
             // Remove individual filters
@@ -949,6 +931,9 @@
                 }
             });
         });
+
+        // Initialize pagination on page load
+        updatePagination();
     </script>
 
 </body>
