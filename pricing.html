@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transparent pricing for premium car rentals. No hidden fees, competitive rates for economy to luxury vehicles. Book with confidence at LuxuDrive.">
+    <meta name="keywords" content="car rental pricing, rental rates, transparent pricing, no hidden fees, luxury car rental costs">
+    <title>Pricing - LuxuDrive Car Rentals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "LuxuDrive Pricing",
+        "url": "https://luxudrive.com/pricing",
+        "description": "Transparent pricing for premium car rentals with no hidden fees",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "LuxuDrive",
+            "priceRange": "$$"
+        }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ===================================
+        HEADER / NAVIGATION
+    =================================== -->
+    <header class="header" id="header">
+        <nav class="nav">
+            <a href="index.html" class="logo">
+                LuxuDrive
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="pricing.html" class="active">Pricing</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking" class="btn btn-primary btn-small">Book a Car</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- ===================================
+        PRICING HERO SECTION
+    =================================== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Transparent Pricing,<br>
+                        <span>No Hidden Fees</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Choose from our competitively priced fleet with clear, upfront costs. From economy to luxury vehicles, we guarantee no surprises at checkout.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="booking" class="btn btn-primary">Book Now</a>
+                        <a href="cars.html" class="btn btn-secondary">View Cars</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in">
+                    <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80" alt="Luxury car pricing transparency" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+        PRICING TIERS SECTION
+    =================================== -->
+    <section class="section pricing-section fade-in">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Perfect Vehicle</h2>
+                <p class="section-subtitle">All prices are per day with unlimited mileage. Additional fees may apply for special requests.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Economy Tier -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">🚗</div>
+                        <h3 class="pricing-title">Economy</h3>
+                        <div class="pricing-price">
+                            <span class="pricing-amount">$42</span>
+                            <span class="pricing-period">/day</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">✓ Compact cars (Toyota Corolla, Honda Civic)</div>
+                        <div class="pricing-feature">✓ Automatic transmission</div>
+                        <div class="pricing-feature">✓ Air conditioning</div>
+                        <div class="pricing-feature">✓ Basic insurance included</div>
+                        <div class="pricing-feature">✓ 24/7 roadside assistance</div>
+                    </div>
+                    <a href="booking?category=economy" class="btn btn-primary btn-large">Book Economy Car</a>
+                </div>
+
+                <!-- SUV Tier -->
+                <div class="pricing-card pricing-card-popular">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <div class="pricing-icon">🚙</div>
+                        <h3 class="pricing-title">SUV</h3>
+                        <div class="pricing-price">
+                            <span class="pricing-amount">$68</span>
+                            <span class="pricing-period">/day</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">✓ Spacious SUVs (Toyota RAV4, Honda CR-V)</div>
+                        <div class="pricing-feature">✓ Automatic transmission</div>
+                        <div class="pricing-feature">✓ All-wheel drive available</div>
+                        <div class="pricing-feature">✓ Enhanced insurance coverage</div>
+                        <div class="pricing-feature">✓ Family-friendly amenities</div>
+                        <div class="pricing-feature">✓ Extra cargo space</div>
+                    </div>
+                    <a href="booking?category=suv" class="btn btn-primary btn-large">Book SUV</a>
+                </div>
+
+                <!-- Luxury Tier -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">🏎️</div>
+                        <h3 class="pricing-title">Luxury</h3>
+                        <div class="pricing-price">
+                            <span class="pricing-amount">$145</span>
+                            <span class="pricing-period">/day</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">✓ Premium sedans (BMW 5 Series, Mercedes C-Class)</div>
+                        <div class="pricing-feature">✓ Leather interiors</div>
+                        <div class="pricing-feature">✓ Advanced safety features</div>
+                        <div class="pricing-feature">✓ Premium audio system</div>
+                        <div class="pricing-feature">✓ GPS navigation</div>
+                        <div class="pricing-feature">✓ Priority customer service</div>
+                    </div>
+                    <a href="booking?category=luxury" class="btn btn-primary btn-large">Book Luxury Car</a>
+                </div>
+
+                <!-- Electric Tier -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <div class="pricing-icon">⚡</div>
+                        <h3 class="pricing-title">Electric</h3>
+                        <div class="pricing-price">
+                            <span class="pricing-amount">$125</span>
+                            <span class="pricing-period">/day</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="pricing-feature">✓ Tesla Model 3, Polestar, or equivalent</div>
+                        <div class="pricing-feature">✓ Supercharger access included</div>
+                        <div class="pricing-feature">✓ Autopilot features</div>
+                        <div class="pricing-feature">✓ Premium sound system</div>
+                        <div class="pricing-feature">✓ Mobile app connectivity</div>
+                        <div class="pricing-feature">✓ Eco-friendly driving</div>
+                    </div>
+                    <a href="booking?category=electric" class="btn btn-primary btn-large">Book Electric Car</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+        ADDITIONAL FEES SECTION
+    =================================== -->
+    <section class="section fees-section fade-in" style="background-color: var(--surface);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Additional Fees & Policies</h2>
+                <p class="section-subtitle">Everything you need to know about our transparent pricing structure</p>
+            </div>
+
+            <div class="fees-grid">
+                <div class="fee-card">
+                    <div class="fee-icon">🛡️</div>
+                    <h3>Insurance Coverage</h3>
+                    <p>Basic insurance is included in all rentals. Upgrade to premium coverage for additional peace of mind.</p>
+                    <div class="fee-price">+$15/day</div>
+                </div>
+
+                <div class="fee-card">
+                    <div class="fee-icon">👤</div>
+                    <h3>Additional Driver</h3>
+                    <p>Add extra drivers to your rental agreement. Each additional driver must meet our requirements.</p>
+                    <div class="fee-price">+$10/day</div>
+                </div>
+
+                <div class="fee-card">
+                    <div class="fee-icon">🧒</div>
+                    <h3>Child Safety Seat</h3>
+                    <p>Infant, toddler, and booster seats available. Professional installation recommended.</p>
+                    <div class="fee-price">+$5/day</div>
+                </div>
+
+                <div class="fee-card">
+                    <div class="fee-icon">🗺️</div>
+                    <h3>GPS Navigation</h3>
+                    <p>Premium GPS units with real-time traffic updates and points of interest.</p>
+                    <div class="fee-price">+$8/day</div>
+                </div>
+
+                <div class="fee-card">
+                    <div class="fee-icon">🚗</div>
+                    <h3>One-Way Rental</h3>
+                    <p>Drop off your vehicle at a different location. Fees vary by distance and vehicle type.</p>
+                    <div class="fee-price">$50-$150</div>
+                </div>
+
+                <div class="fee-card">
+                    <div class="fee-icon">⛽</div>
+                    <h3>Fuel Policy</h3>
+                    <p>Return vehicles with the same fuel level. Refueling fees apply if returned below rental level.</p>
+                    <div class="fee-price">$6.50/gallon + service fee</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+        DISCOUNT SECTION
+    =================================== -->
+    <section class="section discount-section fade-in">
+        <div class="container">
+            <div class="discount-content">
+                <div class="discount-text">
+                    <h2 class="discount-title">Save More with Our Discounts</h2>
+                    <p class="discount-subtitle">Take advantage of our special offers and loyalty programs</p>
+                    <div class="discount-list">
+                        <div class="discount-item">
+                            <span class="discount-percentage">10% OFF</span>
+                            <span class="discount-desc">Weekly rentals (7+ days)</span>
+                        </div>
+                        <div class="discount-item">
+                            <span class="discount-percentage">15% OFF</span>
+                            <span class="discount-desc">Monthly rentals (30+ days)</span>
+                        </div>
+                        <div class="discount-item">
+                            <span class="discount-percentage">20% OFF</span>
+                            <span class="discount-desc">Loyalty members (3+ rentals)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="discount-visual">
+                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&q=80" alt="Luxury car discount offers" class="discount-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+        FAQ SECTION
+    =================================== -->
+    <section class="section pricing-faq fade-in" style="background-color: var(--surface);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Pricing FAQs</h2>
+                <p class="section-subtitle">Common questions about our pricing and policies</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Are there any hidden fees?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        No hidden fees! Our pricing is completely transparent. The quoted daily rate includes basic insurance, unlimited mileage, and 24/7 roadside assistance. Additional fees are clearly disclosed upfront.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What's included in the base price?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        All our rentals include: comprehensive insurance coverage, unlimited mileage, 24/7 roadside assistance, GPS navigation (in most vehicles), and our premium customer service. Airport fees and taxes are additional.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Can I get a discount for longer rentals?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes! We offer automatic discounts for longer rentals: 10% off for weekly rentals (7+ days) and 15% off for monthly rentals (30+ days). Contact us for custom quotes on extended rentals.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        What's your fuel policy?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        We ask that you return vehicles with the same fuel level as when you picked them up. If the tank is lower, we'll refuel it and charge you the current market price plus a $5 service fee per gallon.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Do you offer corporate discounts?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Absolutely! We provide special corporate rates for business travelers. Contact our corporate sales team for customized packages, monthly billing, and dedicated account management.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+        CTA SECTION
+    =================================== -->
+    <section class="cta-section fade-in">
+        <div class="container">
+            <h2 class="cta-title">Ready to Start Your Journey?</h2>
+            <p class="cta-subtitle">Book your perfect vehicle today with our transparent pricing and exceptional service</p>
+            <a href="booking" class="btn btn-light">Book Your Car Now</a>
+        </div>
+    </section>
+
+    <!-- ===================================
+        FOOTER
+    =================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">LuxuDrive
+                    </h3>
+                    <p>Your trusted partner for premium car rentals. We're committed to providing exceptional service, transparent pricing, and a seamless rental experience.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" class="social-link" aria-label="Facebook">f</a>
+                        <a href="https://twitter.com" class="social-link" aria-label="Twitter">𝕏</a>
+                        <a href="https://instagram.com" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">in</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="cars.html">Browse Cars</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="/services/corporate">Corporate Rentals</a></li>
+                        <li><a href="/services/long-term">Long-term Leasing</a></li>
+                        <li><a href="/services/airport">Airport Pickup</a></li>
+                        <li><a href="/services/chauffeur">Chauffeur Service</a></li>
+                        <li><a href="/insurance">Insurance Options</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>✉️ info@luxudrive.com</li>
+                        <li>📍 123 Rental Drive, Miami, FL 33101</li>
+                        <li style="margin-top: var(--spacing-md);">
+                            <strong>Hours:</strong><br>
+                            Mon-Fri: 7AM - 10PM<br>
+                            Sat-Sun: 8AM - 8PM
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 LuxuDrive Car Rentals. All rights reserved. | <a href="/privacy" style="color: var(--primary);">Privacy Policy</a> | <a href="/terms" style="color: var(--primary);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===================================
+        BACK TO TOP BUTTON
+    =================================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        ↑
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1921,8 +1921,277 @@ button {
 }
 
 /* ===================================
-    CONTACT PAGE STYLES
+    PRICING PAGE STYLES
 =================================== */
+
+.pricing-section {
+    padding: var(--spacing-3xl) 0;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-2xl);
+}
+
+.pricing-card {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pricing-card-popular {
+    border: 2px solid var(--primary);
+    position: relative;
+}
+
+.pricing-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-xl);
+    font-size: 0.8rem;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.pricing-header {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+    color: var(--dark-gray);
+}
+
+.pricing-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.pricing-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    color: var(--dark-gray);
+}
+
+.pricing-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    margin-bottom: var(--spacing-lg);
+}
+
+.pricing-amount {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--dark-gray);
+}
+
+.pricing-period {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.pricing-features {
+    padding: var(--spacing-xl);
+}
+
+.pricing-feature {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.95rem;
+    color: var(--text-primary);
+}
+
+.pricing-feature:last-child {
+    margin-bottom: 0;
+}
+
+.btn-large {
+    width: 100%;
+    margin-top: var(--spacing-lg);
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Fees Section */
+.fees-section {
+    padding: var(--spacing-3xl) 0;
+}
+
+.fees-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-2xl);
+}
+
+.fee-card {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.fee-card:hover {
+    transform: translateY(-2px);
+}
+
+.fee-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.fee-card h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-primary);
+}
+
+.fee-card p {
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.5;
+}
+
+.fee-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* Discount Section */
+.discount-section {
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(135deg, var(--primary-light), var(--primary));
+    color: var(--dark-gray);
+}
+
+.discount-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+.discount-text {
+    max-width: 500px;
+}
+
+.discount-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-md);
+    color: var(--dark-gray);
+}
+
+.discount-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.9;
+}
+
+.discount-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.discount-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    backdrop-filter: blur(10px);
+}
+
+.discount-percentage {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary-dark);
+    min-width: 100px;
+}
+
+.discount-desc {
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+.discount-visual {
+    text-align: center;
+}
+
+.discount-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+}
+
+/* Pricing FAQ */
+.pricing-faq {
+    padding: var(--spacing-3xl) 0;
+}
+
+/* ===================================
+    RESPONSIVE DESIGN FOR PRICING
+=================================== */
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .fees-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .discount-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: var(--spacing-xl);
+    }
+
+    .discount-title {
+        font-size: 2rem;
+    }
+
+    .pricing-amount {
+        font-size: 2.5rem;
+    }
+
+    .pricing-header {
+        padding: var(--spacing-lg);
+    }
+
+    .pricing-features {
+        padding: var(--spacing-lg);
+    }
+}
 
 .contact-quick-info {
     display: grid;
