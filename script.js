@@ -155,3 +155,91 @@ window.addEventListener('load', () => {
   const loadTime = performance.now();
   console.log(`Page loaded in ${loadTime.toFixed(2)}ms`);
 });
+
+// CONTACT FORM HANDLING
+const contactForm = document.getElementById('contactForm');
+
+if (contactForm) {
+  // Set minimum date for date inputs
+  const today = new Date().toISOString().split('T')[0];
+  const pickupDate = contactForm.querySelector('#pickupDate');
+  const returnDate = contactForm.querySelector('#returnDate');
+
+  if (pickupDate) pickupDate.min = today;
+  if (returnDate) returnDate.min = today;
+
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    // Basic form validation
+    const requiredFields = contactForm.querySelectorAll('[required]');
+    let isValid = true;
+
+    requiredFields.forEach(field => {
+      if (!field.value.trim()) {
+        field.style.borderColor = '#ef4444';
+        isValid = false;
+      } else {
+        field.style.borderColor = 'var(--border)';
+      }
+    });
+
+    // Email validation
+    const emailField = contactForm.querySelector('#email');
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailField && emailField.value && !emailRegex.test(emailField.value)) {
+      emailField.style.borderColor = '#ef4444';
+      isValid = false;
+    }
+
+    // Date validation
+    const pickupDate = contactForm.querySelector('#pickupDate');
+    const returnDate = contactForm.querySelector('#returnDate');
+
+    if (pickupDate.value && returnDate.value) {
+      const pickup = new Date(pickupDate.value);
+      const returnD = new Date(returnDate.value);
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+
+      if (pickup < today) {
+        pickupDate.style.borderColor = '#ef4444';
+        isValid = false;
+        alert('Pickup date cannot be in the past');
+      } else if (returnD <= pickup) {
+        returnDate.style.borderColor = '#ef4444';
+        isValid = false;
+        alert('Return date must be after pickup date');
+      } else {
+        pickupDate.style.borderColor = 'var(--border)';
+        returnDate.style.borderColor = 'var(--border)';
+      }
+    }
+
+    if (isValid) {
+      // Simulate form submission
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalText = submitBtn.textContent;
+
+      submitBtn.textContent = 'Sending...';
+      submitBtn.disabled = true;
+
+      // Simulate API call
+      setTimeout(() => {
+        alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+        contactForm.reset();
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+      }, 2000);
+    } else {
+      alert('Please fill in all required fields correctly.');
+    }
+  });
+
+  // Real-time validation feedback
+  contactForm.addEventListener('input', (e) => {
+    if (e.target.hasAttribute('required') && e.target.value.trim()) {
+      e.target.style.borderColor = 'var(--border)';
+    }
+  });
+}
